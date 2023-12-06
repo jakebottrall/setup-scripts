@@ -48,6 +48,8 @@ brew install mongodb-community@7.0
 
 echo 'export PATH=~/.bin:$PATH' >> ~/.zshrc
 
+echo 'export PATH="/usr/local/opt/postgresql@15/bin:$PATH"' >> ~/.zshrc
+
 echo 'export NVM_DIR="$HOME/.nvm"' >> ~/.zshrc
 echo '[ -s "/usr/local/opt/nvm/nvm.sh" ] && \. "/usr/local/opt/nvm/nvm.sh"  # This loads nvm' >> ~/.zshrc
 echo '[ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion' >> ~/.zshrc
@@ -62,6 +64,8 @@ cat << EOF >> ~/.zprofile
 # Add Visual Studio Code (code)
 export PATH="\$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
 EOF
+
+pipx ensurepath
 
 source ~/.zshrc
 
@@ -79,9 +83,7 @@ rbenv global 3.2.2
 pyenv install 3.12
 pyenv global 3.12
 
-
-# setup ppipx & poetry
-pipx ensurepath
+# setup poetry
 pipx install poetry
 
 # start services
