@@ -13,6 +13,7 @@ code --install-extension ms-azuretools.vscode-docker
 code --install-extension ms-python.black-formatter
 code --install-extension ms-python.python
 code --install-extension ms-vscode.makefile-tools
+code --install-extension PKief.material-icon-theme
 code --install-extension Shopify.ruby-extensions-pack
 code --install-extension svelte.svelte-vscode
 code --install-extension viktorqvarfordt.vscode-pitch-black-theme
