@@ -9,7 +9,6 @@ xcode-select --install
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 # install homebrew packages
-brew install docker
 brew install gh
 brew install go
 brew install nvm
@@ -24,6 +23,7 @@ brew install speedtest-cli
 brew install --cask 1password
 brew install --cask arc
 brew install --cask discord
+brew install --cask docker
 brew install --cask logi-options-plus
 brew install --cask maccy
 brew install --cask messenger
