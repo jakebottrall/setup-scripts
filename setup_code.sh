@@ -11,6 +11,7 @@ code --install-extension GitHub.vscode-github-actions
 code --install-extension golang.Go
 code --install-extension ms-azuretools.vscode-docker
 code --install-extension ms-python.black-formatter
+code --install-extension ms-python.isort
 code --install-extension ms-python.python
 code --install-extension ms-vscode.makefile-tools
 code --install-extension PKief.material-icon-theme
