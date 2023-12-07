@@ -27,6 +27,9 @@ git config --global rebase.instructionFormat "[%an] - %s"
 # this adds `git pf` as an alias to force pushing (gently)
 git config --global alias.pf "push --force-with-lease"
 
+# this adds `git co` as an alias to checkout
+git config --global alias.co "checkout"
+
 # this sets up my identity
 git config --global user.name "Jake Bottrall"
 git config --global user.email jakebottrall@gmail.com
