@@ -11,6 +11,7 @@ xcode-select --install
 # install homebrew packages
 brew install gh
 brew install go
+brew install htop
 brew install nvm
 brew install pipx
 brew install pnpm
