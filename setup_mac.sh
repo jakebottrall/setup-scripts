@@ -41,7 +41,7 @@ brew install bun
 brew tap homebrew/cask-fonts
 brew install --cask font-fira-code
 
-cp -f ./profiles/.zshrc ~/.zshrc
+cp -f ./config/.zshrc ~/.zshrc
 source ~/.zshrc
 
 # setup node
