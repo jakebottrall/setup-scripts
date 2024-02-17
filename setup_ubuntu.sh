@@ -15,12 +15,6 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
 curl -fsSL https://get.pnpm.io/install.sh | sh -
 curl https://pyenv.run | bash
 
-curl -fsSL https://www.mongodb.org/static/pgp/server-7.0.asc | \
-sudo gpg -o /usr/share/keyrings/mongodb-server-7.0.gpg \
---dearmor
-echo "deb [ arch=amd64,arm64 signed-by=/usr/share/keyrings/mongodb-server-7.0.gpg ] https://repo.mongodb.org/apt/ubuntu jammy/mongodb-org/7.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-7.0.list
-sudo apt-get install -y mongodb-org
-
 curl -fsSL https://bun.sh/install | bash
 
 sudo apt install gh -y
@@ -49,14 +43,12 @@ sh <(curl -sSf https://downloads.nordcdn.com/apps/linux/install.sh)
 
 # setup zsh
 
-pipx ensurepath
-
-yes | cp -rf ./profiles/.bashrc ~/.bashrc
+cp -rf ./profiles/.bashrc ~/.bashrc
 source ~/.bashrc
 
 export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
 
 eval "$(rbenv init - zsh)"
 
