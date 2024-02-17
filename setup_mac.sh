@@ -15,7 +15,6 @@ brew install htop
 brew install nvm
 brew install pipx
 brew install pnpm
-brew install postgresql@15
 brew install pyenv
 brew install rbenv
 brew install ruby-build
