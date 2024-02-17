@@ -41,11 +41,7 @@ brew install bun
 brew tap homebrew/cask-fonts
 brew install --cask font-fira-code
 
-brew tap mongodb/brew
-brew install mongodb-community@7.0
-
 cp -f ./profiles/.zshrc ~/.zshrc
-
 source ~/.zshrc
 
 # setup node
