@@ -61,8 +61,5 @@ pyenv global 3.12
 # setup poetry
 pipx install poetry
 
-# start services
-brew services start postgresql@15
-
 # setup vs code
 ./setup_code.sh
