@@ -69,3 +69,8 @@ pipx install poetry
 
 # setup vs code
 ./setup_code.sh
+
+# setup mx master 3
+sudo add-apt-repository ppa:solaar-unifying/stable
+sudo apt install solaar -y
+cp -rf ./config/solaar_rules.yaml ~/.config/solaar/rules.yaml
