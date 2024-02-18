@@ -39,6 +39,7 @@ sudo snap install code --classic
 sudo snap install discord
 sudo snap install docker
 sudo snap install spotify
+sudo snap install steam
 
 sh <(curl -sSf https://downloads.nordcdn.com/apps/linux/install.sh)
 
