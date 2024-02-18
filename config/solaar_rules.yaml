@@ -1,0 +1,16 @@
+%YAML 1.3
+---
+- MouseGesture: Mouse Gesture Button
+- KeyPress:
+    - [space, Super_L]
+    - click
+---
+- MouseGesture: Mouse Right
+- KeyPress:
+    - [Super_R, Page_Up]
+    - click
+---
+- MouseGesture: Mouse Left
+- KeyPress:
+    - [Super_R, Page_Down]
+    - click
