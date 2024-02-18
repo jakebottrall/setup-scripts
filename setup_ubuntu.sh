@@ -49,7 +49,7 @@ dconf load /com/gexperts/Tilix/ < ./config/tilix.dconf
 # setup bash
 bash -c "$(curl -fsSL https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh)"
 
-cp -rf ./profiles/.bashrc ~/.bashrc
+cp -rf ./config/.bashrc ~/.bashrc
 source ~/.bashrc
 
 # setup node
