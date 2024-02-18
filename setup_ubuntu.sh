@@ -19,8 +19,10 @@ curl -fsSL https://bun.sh/install | bash
 
 sudo apt install fonts-firacode -y
 sudo apt install gh -y
+sudo apt install gnome-tweaks -y
 sudo apt install golang -y
 sudo apt install htop -y
+sudo apt install papirus-icon-theme -y
 sudo apt install pipx -y
 sudo apt install postgresql -y
 sudo apt install rbenv -y
