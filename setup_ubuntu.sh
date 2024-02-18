@@ -42,6 +42,9 @@ sudo snap install spotify
 
 sh <(curl -sSf https://downloads.nordcdn.com/apps/linux/install.sh)
 
+# setup tilix
+dconf load /com/gexperts/Tilix/ < ./config/tilix.dconf
+
 # setup bash
 bash -c "$(curl -fsSL https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh)"
 
