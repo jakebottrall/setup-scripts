@@ -25,6 +25,7 @@ curl -sS https://downloads.1password.com/linux/keys/1password.asc | sudo gpg --d
 sudo apt install 1password -y
 sudo apt install fonts-firacode -y
 sudo apt install gh -y
+sudo apt install gir1.2-gda-5.0 gir1.2-gsound-1.0 # for pano
 sudo apt install gnome-tweaks -y
 sudo apt install golang -y
 sudo apt install htop -y
