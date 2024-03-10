@@ -22,6 +22,7 @@ curl -sS https://downloads.1password.com/linux/debian/debsig/1password.pol | sud
 sudo mkdir -p /usr/share/debsig/keyrings/AC2D62742012EA22
 curl -sS https://downloads.1password.com/linux/keys/1password.asc | sudo gpg --dearmor --output /usr/share/debsig/keyrings/AC2D62742012EA22/debsig.gpg
 
+sudo apt install 1password -y
 sudo apt install fonts-firacode -y
 sudo apt install gh -y
 sudo apt install gnome-tweaks -y
@@ -34,7 +35,7 @@ sudo apt install rbenv -y
 sudo apt install solaar -y
 sudo apt install tilix -y
 sudo apt install transmission -y
-sudo apt install 1password -y
+sudp apt install gnome-browser-connector -y
 
 sudo add-apt-repository multiverse
 sudo apt install steam -y
