@@ -153,9 +153,6 @@ case ":$PATH:" in
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 
-export BUN_INSTALL="$HOME/.bun"
-export PATH=$BUN_INSTALL/bin:$PATH
-
 eval "$(rbenv init - zsh)"
 
 export PYENV_ROOT="$HOME/.pyenv"

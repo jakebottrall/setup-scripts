@@ -35,9 +35,6 @@ brew install --cask visual-studio-code
 brew install --cask warp
 brew install --cask whatsapp
 
-brew tap oven-sh/bun
-brew install bun
-
 brew tap homebrew/cask-fonts
 brew install --cask font-fira-code
 

@@ -13,8 +13,6 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
 curl -fsSL https://get.pnpm.io/install.sh | sh -
 curl https://pyenv.run | bash
 
-curl -fsSL https://bun.sh/install | bash
-
 sudo add-apt-repository ppa:solaar-unifying/stable
 
 curl -sS https://downloads.1password.com/linux/keys/1password.asc | sudo gpg --dearmor --output /usr/share/keyrings/1password-archive-keyring.gpg
