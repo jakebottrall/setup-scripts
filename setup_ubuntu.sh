@@ -22,6 +22,13 @@ curl -sS https://downloads.1password.com/linux/debian/debsig/1password.pol | sud
 sudo mkdir -p /usr/share/debsig/keyrings/AC2D62742012EA22
 curl -sS https://downloads.1password.com/linux/keys/1password.asc | sudo gpg --dearmor --output /usr/share/debsig/keyrings/AC2D62742012EA22/debsig.gpg
 
+sudo apt-get install wget gpg
+wget -qO- https://releases.warp.dev/linux/keys/warp.asc | gpg --dearmor > warpdotdev.gpg
+sudo install -D -o root -g root -m 644 warpdotdev.gpg /etc/apt/keyrings/warpdotdev.gpg
+sudo sh -c 'echo "deb [arch=amd64 signed-by=/etc/apt/keyrings/warpdotdev.gpg] https://releases.warp.dev/linux/deb stable main" > /etc/apt/sources.list.d/warpdotdev.list'
+rm warpdotdev.gpg
+sudo apt update && sudo apt install warp-terminal
+
 sudo apt install 1password -y
 sudo apt install fonts-firacode -y
 sudo apt install gh -y
@@ -34,7 +41,6 @@ sudo apt install pipx -y
 sudo apt install postgresql -y
 sudo apt install rbenv -y
 sudo apt install solaar -y
-sudo apt install tilix -y
 sudo apt install transmission -y
 sudp apt install gnome-browser-connector -y
 
@@ -47,12 +53,6 @@ sudo snap install docker
 sudo snap install spotify
 
 sh <(curl -sSf https://downloads.nordcdn.com/apps/linux/install.sh)
-
-# setup tilix
-dconf load /com/gexperts/Tilix/ < ./config/tilix.dconf
-
-# setup bash
-bash -c "$(curl -fsSL https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh)"
 
 cp -rf ./config/.bashrc ~/.bashrc
 source ~/.bashrc
