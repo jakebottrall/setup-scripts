@@ -8,6 +8,9 @@ xcode-select --install
 # install homebrew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
+# install ohmyzsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
 # install homebrew packages
 brew install gh
 brew install go
@@ -24,6 +27,7 @@ brew install --cask 1password
 brew install --cask arc
 brew install --cask discord
 brew install --cask docker
+brew install --cask iterm2
 brew install --cask logi-options-plus
 brew install --cask maccy
 brew install --cask messenger
