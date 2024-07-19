@@ -15,13 +15,11 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 brew install gh
 brew install go
 brew install htop
-brew install nvm
-brew install pipx
-brew install pnpm
-brew install pyenv
-brew install rbenv
-brew install ruby-build
+brew install node
 brew install speedtest-cli
+
+brew install corepack
+corepack enable pnpm
 
 brew install --cask 1password
 brew install --cask arc
@@ -43,23 +41,6 @@ brew install --cask font-fira-code
 
 cp -f ./config/.zshrc ~/.zshrc
 source ~/.zshrc
-
-# setup node
-mkdir ~/.nvm
-nvm install --lts
-nvm use --lts
-
-# setup ruby
-rbenv init
-rbenv install 3.2.2
-rbenv global 3.2.2
-
-# setup python
-pyenv install 3.12
-pyenv global 3.12
-
-# setup poetry
-pipx install poetry
 
 # setup vs code
 ./setup_code.sh

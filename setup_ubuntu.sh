@@ -9,10 +9,6 @@ curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg | sudo 
 && sudo chmod go+r /usr/share/keyrings/githubcli-archive-keyring.gpg \
 && echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/githubcli-archive-keyring.gpg] https://cli.github.com/packages stable main" | sudo tee /etc/apt/sources.list.d/github-cli.list > /dev/null \
 
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
-curl -fsSL https://get.pnpm.io/install.sh | sh -
-curl https://pyenv.run | bash
-
 sudo add-apt-repository ppa:solaar-unifying/stable
 
 curl -sS https://downloads.1password.com/linux/keys/1password.asc | sudo gpg --dearmor --output /usr/share/keyrings/1password-archive-keyring.gpg
@@ -27,12 +23,9 @@ sudo apt install fonts-firacode -y
 sudo apt install gh -y
 sudo apt install gir1.2-gda-5.0 gir1.2-gsound-1.0 # for pano
 sudo apt install gnome-tweaks -y
-sudo apt install golang -y
 sudo apt install htop -y
+sudo apt install nodejs
 sudo apt install papirus-icon-theme -y
-sudo apt install pipx -y
-sudo apt install postgresql -y
-sudo apt install rbenv -y
 sudo apt install solaar -y
 sudo apt install tilix -y
 sudo apt install transmission -y
@@ -48,6 +41,9 @@ sudo snap install spotify
 
 sh <(curl -sSf https://downloads.nordcdn.com/apps/linux/install.sh)
 
+# setup pnpm
+corepack enable pnpm
+
 # setup tilix
 dconf load /com/gexperts/Tilix/ < ./config/tilix.dconf
 
@@ -56,21 +52,6 @@ bash -c "$(curl -fsSL https://raw.githubusercontent.com/ohmybash/oh-my-bash/mast
 
 cp -rf ./config/.bashrc ~/.bashrc
 source ~/.bashrc
-
-# setup node
-nvm install --lts
-nvm use --lts
-
-# setup ruby
-rbenv install 3.1.2
-rbenv global 3.1.2
-
-# setup python
-pyenv install 3.12
-pyenv global 3.12
-
-# setup poetry
-pipx install poetry
 
 # setup vs code
 ./setup_code.sh
