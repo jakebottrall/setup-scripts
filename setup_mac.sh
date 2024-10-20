@@ -13,7 +13,6 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 
 # install homebrew packages
 brew install gh
-brew install go
 brew install htop
 brew install node
 brew install speedtest-cli
