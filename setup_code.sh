@@ -8,6 +8,5 @@ code --install-extension esbenp.prettier-vscode
 code --install-extension GitHub.vscode-github-actions
 code --install-extension ms-azuretools.vscode-docker
 code --install-extension PKief.material-icon-theme
-code --install-extension svelte.svelte-vscode
 code --install-extension viktorqvarfordt.vscode-pitch-black-theme
 code --install-extension yoavbls.pretty-ts-errors
