@@ -33,7 +33,6 @@ brew install --cask nordvpn
 brew install --cask spotify
 brew install --cask transmission
 brew install --cask visual-studio-code
-brew install --cask whatsapp
 
 brew tap homebrew/cask-fonts
 brew install --cask font-fira-code
