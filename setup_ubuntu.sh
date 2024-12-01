@@ -20,15 +20,17 @@ sudo apt install nodejs -y
 sudo apt install papirus-icon-theme -y
 sudo apt install gnome-browser-connector -y
 
-sudo snap install transmission
-sudo snap install steam
-sudo snap install spotify
-sudo snap install nordvpn
-sudo snap install htop
-sudo snap install docker
-sudo snap install discord
+sudo snao install 1password
 sudo snap install code --classic
-snap install nvtop
+sudo snap install discord
+sudo snap install docker
+sudo snap install htop
+sudo snap install nordvpn
+sudo snap install nvtop
+sudo snap install spotify
+sudo snap install steam
+sudo snap install transmission
+
 snap connect nvtop:system-observe
 snap connect nvtop:process-control
 snap connect nvtop:kubernetes-support
